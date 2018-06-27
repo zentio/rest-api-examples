@@ -17,12 +17,12 @@ $base64 = rtrim(strtr(base64_encode($data), '+/', '-_'), '=');
 $attachments = '{"file.type": "' . $base64 . '"}';
 
 $fields = array('customer' => urlencode('benjamin@gmail.com'),
-	           'user' => urlencode('benjamin@gmail.com'),
-	           'subject' => urlencode("My order is broken"),
-	           'message' => urlencode("This is my message, you can answer to my e-mail accountsss."),
-						 'state'	=> urlencode("open"),
-	           'extendedModel' => $extendedModel,
-					 	 'attachments' => $attachments);
+        'user' => urlencode('benjamin@gmail.com'),
+        'subject' => urlencode("My order is broken"),
+        'message' => urlencode("This is my message, you can answer to my e-mail accountsss."),
+        'state' => urlencode("open"),
+        'extendedModel' => $extendedModel,
+        'attachments' => $attachments);
 
 $fields_string = '';
 //url-ify the data for the POST
